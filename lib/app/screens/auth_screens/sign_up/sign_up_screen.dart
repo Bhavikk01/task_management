@@ -151,7 +151,7 @@ class SignUpScreen extends GetView<SignUpController> {
                             onFieldSubmitted: (value) {
                               FocusScope.of(context).requestFocus(controller.confirmPasswordField);
                             },
-                            obscureText: false,
+                            obscureText: true,
                             cursorColor: ColorsUtil.appBlueColor,
                           ),
                           SizedBox(height: 10),
@@ -187,7 +187,7 @@ class SignUpScreen extends GetView<SignUpController> {
                               return null;
                             },
                             onFieldSubmitted: (value) {},
-                            obscureText: false,
+                            obscureText: true,
                             cursorColor: ColorsUtil.appBlueColor,
                           ),
                           SizedBox(height: 10),

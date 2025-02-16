@@ -9,6 +9,7 @@ import 'package:intl/intl.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
+import '../../services/user.dart';
 import '../../utils/colors.dart';
 import '../../utils/scale_utility.dart';
 import 'controller/home_screen_controller.dart';
@@ -55,7 +56,7 @@ class HomeScreen extends GetView<HomeScreenController> {
                         ),
                       ),
                       Text(
-                        'Bhavik Kothari',
+                        UserStore.to.profile.name!,
                         style: GoogleFonts.outfit(
                           fontSize: scale.getScaledFont(16),
                           fontWeight: FontWeight.w600,
